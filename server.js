@@ -8,7 +8,16 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-
+app.get('/Marauders-Map', function(req,res){
+	res.send('I solemly swear I am up to no good');
+});
+app.get('/Sorting-Hat', function(req,res)
+{
+	res.send('Godric | Salazar | Rowena | Helga');
+});
+app.get('/Cursed-Child', function(req,res){
+	res.send('Albus+Scorpius+Delphi = Disappointment');
+});
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
