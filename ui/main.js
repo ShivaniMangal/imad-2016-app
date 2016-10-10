@@ -3,7 +3,14 @@ console.log('Hi there!')
 var trial = document.getElementById('content');
 trial.innerHTML="PotterHead Aboard? You're in the right place! Mount your broomstick for a magical journey!";
 var image = document.getElementById('dino');
-image.onclick=function()
+
+var marginleft=0;
+function moveright()
 {
-    image.style.marginLeft='100px';
+    marginleft = marginleft+10;
+    image.style.marginleft = marginleft+'px';
 }
+image.onclick =function()
+{
+    var moving_time =  setInterval(moveright,100);
+};
