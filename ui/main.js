@@ -7,7 +7,7 @@ image.onclick=function()
 {
     image.style.marginLeft='100px';
 };
-var i = document.getElementById('dino');
+/*var i = document.getElementById('dino');
 var marginleft = 0;
 function moveright()
 {
@@ -17,4 +17,4 @@ function moveright()
 i.onclick = function()
 {
     var interval =  setInterval(moveright, 50);
-};
+};*/
