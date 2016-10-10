@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/Marauders-Map', function(req,res){
+app.get('/MM', function(req,res){
 	res.sendFile(path.join(_dirname, 'ui','Map.html'));
 });
 app.get('/Sorting-Hat', function(req,res)
