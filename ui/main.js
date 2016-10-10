@@ -9,8 +9,8 @@ image.onclick=function()
 };
 function moveleft()
 {
-    marginright = marginright+10;
-    image.style.marginright = marginright+'px';
+    marginRight = marginRight+10;
+    image.style.marginRight = marginRight+'px';
 }
 image.onclick =function()
 {
