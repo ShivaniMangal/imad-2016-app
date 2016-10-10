@@ -7,12 +7,13 @@ image.onclick=function()
 {
     image.style.marginLeft='100px';
 };
-function moveleft()
+var marginleft=0;
+function moveright()
 {
-    marginRight = marginRight+10;
-    image.style.marginRight = marginRight+'px';
+    marginleft = marginleft+10;
+    image.style.marginleft = marginleft+'px';
 }
 image.onclick =function()
 {
-    var moving_time =  setInterval(moveleft,100);
+    var moving_time =  setInterval(moveright,100);
 }
