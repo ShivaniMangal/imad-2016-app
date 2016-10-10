@@ -6,4 +6,4 @@ var image = document.getElementById('dino');
 image.onclick=function()
 {
     image.style.marginLeft='100px';
-};
+}
