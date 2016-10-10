@@ -5,5 +5,5 @@ trial.innerHTML="Do I sense a PotterHead? You're in the right place! Mount your 
 var image = document.getElementById('dino');
 image.onclick=function()
 {
-    image.style.MarginLeft='100px';
+    image.style.marginLeft='100px';
 };
