@@ -26,10 +26,6 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/Cursed-Child', function (req, res) {
-  res.send(http://sev.h-cdn.co/assets/15/24/980x490/landscape-1433958862-hpcast1.jpg);
-});
-
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
