@@ -8,13 +8,13 @@ image.onclick=function()
     image.style.marginLeft='100px';
 }*/
 var img = document.getElementById('dino');
-var marginleft=0;
+var marginleft = 0;
 function moveright()
 {
     marginleft = marginleft + 10;
     img.style.marginleft = marginleft + 'px';
 }
-img.onclick =function()
+img.onclick = function()
 {
-    var interval =  setInterval(moveright,100);
+    var interval =  setInterval(moveright, 100);
 };
