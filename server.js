@@ -13,7 +13,7 @@ app.get('/MM', function(req,res){
 });
 app.get('/Sorting-Hat', function(req,res)
 {
-	res.send('Godric | Salazar | Rowena | Helga');
+	res.sendFile(path.join(__dirname,'ui','sorting.html'));
 });
 app.get('/Cursed-Child', function(req,res){
 	res.send('Albus+Scorpius+Delphi = Disappointment');
