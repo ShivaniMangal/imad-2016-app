@@ -15,5 +15,5 @@ function moveright()
 }
 image.onclick =function()
 {
-    var moving_time =  setInterval(moveright,100);
+    var interval =  setInterval(moveright,100);
 };
