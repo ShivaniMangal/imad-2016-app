@@ -10,6 +10,11 @@
                 I solemly swear I'm up to no good
             </h4>
             <div>
+app.get('/ui/hp.png', function (req, res) {
+res.sendFile(path.join(__dirname, 'ui', 'hp.png'));
+});
+            </div>
+            <div>
                 Track IP addresses of websites
             </div>
             <p>
