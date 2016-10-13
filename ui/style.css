@@ -12,6 +12,10 @@ body {
     font-size: 300%;
 }
 
+.italics
+{
+    font-style: italic;
+}
 .bold {
     font-weight: bold;
 }
