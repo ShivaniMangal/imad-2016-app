@@ -15,9 +15,7 @@ app.get('/Sorting-Hat', function(req,res)
 {
 	res.sendFile(path.join(__dirname,'ui','sorting.html'));
 });
-app.get('/Cursed-Child', function(req,res){
-	res.send('Albus+Scorpius+Delphi = Disappointment');
-});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
