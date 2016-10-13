@@ -33,6 +33,9 @@ app.get('/ui/cast.jpg', function (req, res) {
 app.get('/ui/mm.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui',  'mm.jpg'));
 });
+app.get('/ui/sortinghat.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'sortinghat.jpg'));
+});
 
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
