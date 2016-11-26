@@ -1,0 +1,42 @@
+body {
+    font-family: times-new-roman;
+    background-color: lightblue;
+    color: black;
+    margin-top: 60px;
+    }
+.left
+{
+    text-align : left;
+}
+.right
+{
+    text-align : right;
+}
+.center {
+    text-align: center;
+}
+
+.text-big {
+    font-size: 300%;
+}
+
+.italics
+{
+    font-style: italic;
+}
+.bold {
+    font-weight: bold;
+}
+
+.img-medium {
+    height: 210px;
+}
+
+.text-medium
+{
+    font-size: 150%;
+}
+a
+{
+    color: white;
+}
