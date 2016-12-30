@@ -16,7 +16,7 @@ names=JSON.parse(names);//convets string to JSON obj
 var list=' ';
 for(var i=0;i<names.length;i++)
 {
-list = list + '<li>'+ names[i] + '</li>';
+list += '<li>'+ names[i] + '</li>';
 }
 var ul = document.getElementById('nameslist');
 ul.innerHTML=list;
