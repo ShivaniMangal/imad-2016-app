@@ -29,6 +29,11 @@ app.get('/ui/style2.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style2.css'));
 });
 
+app.get('/ui/counter', function (req,res)
+{
+    res.sendFile(path.join(__dirname,'ui','likes_counter.js'));
+});
+
 
 app.get('/ui/hermione.jpg', function(req,res){
     res.sendFile(path.join(__dirname,'ui','hermione.jpg'));
