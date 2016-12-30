@@ -6,10 +6,10 @@ var app = express();
 app.use(morgan('combined'));
 
 var names = [];
-app.get('/submit-name',function(req,res)
+app.get('/submit-name/name:',function(req,res)
 {
     //Get name from the request
-    var name = req.query.name;
+    var name = req.params.name;
     names.push(name);
     res.send(JSON.stringify(names));
 });
