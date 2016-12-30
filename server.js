@@ -14,6 +14,11 @@ app.get('/submit-name',function(req,res)
     res.send(JSON.stringify(names));
 });
 
+app.get('/ui/comments,js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'comments.js'));
+});
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
