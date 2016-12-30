@@ -29,9 +29,11 @@ app.get('/ui/style2.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style2.css'));
 });
 
-app.get('/ui/counter', function (req,res)
+var counter=0;
+app.get('/counter', function (req,res)
 {
-    res.sendFile(path.join(__dirname,'ui','likes_counter.js'));
+    counter=counter+1;
+    res.sendFile(counter.toString());
 });
 
 
