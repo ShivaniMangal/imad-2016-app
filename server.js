@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var names[];
+var names = [];
 app.get('/submit-name',function(req,res)
 {
     //Get name from the request
