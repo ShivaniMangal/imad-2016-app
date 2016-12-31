@@ -86,9 +86,9 @@ app.get('/ui/likes_counter.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'likes_counter.js'));
 });
 
-app.get('/ui/jquery-1.11.3.min.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'jquery-1.11.3.min.js'));
-});
+//app.get('/ui/jquery-1.11.3.min.js', function (req, res) {
+//  res.sendFile(path.join(__dirname, 'ui', 'jquery-1.11.3.min.js'));
+//});
 
 app.get('/ui/bootstrap.min.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'bootstrap.min.js'));
