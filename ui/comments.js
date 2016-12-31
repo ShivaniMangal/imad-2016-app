@@ -11,7 +11,11 @@ alert('req generated');
 REQ.onreadystatechange = function()
 {
    // alert('crossed onreadystatechange');
-if(REQ.readystate === XMLHttpRequest.DONE)
+   if(REQ.readystate!=XMLHttpRequest.DONE)
+   {
+       alert('oh no');
+   }
+   else if(REQ.readystate === XMLHttpRequest.DONE)
 {//Action
 alert('action has begun');
 if(REQ.status === 200 )
