@@ -53,7 +53,7 @@ app.get('/submit-name',function(req,res)
 });
 
 app.post("/submit-name", function (request, response) {
-names.push(request.query.names);
+names.push(request.query.NAME);
   response.sendStatus(200);
 });
 
