@@ -2,6 +2,7 @@
 var submit = document.getElementById('submit_btn');
 submit.onclick=function()
 {
+    alert('started');
 //Creating a request obj
 var REQ = new XMLHttpRequest();
 
