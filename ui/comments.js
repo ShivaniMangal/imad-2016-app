@@ -26,7 +26,7 @@ ul.innerHTML=list;
 };
 //Make the request
 var nameInput=document.getElementById('name');
-var name= nameInput.value;
-request.open('GET','http://shivanimangal.imad.hasura-app.io/submit-name?name=' + name, true);
+var NAME= nameInput.value;
+request.open('GET','http://shivanimangal.imad.hasura-app.io/submit-name?name=' + NAME, true);
 request.send(null);
 };
