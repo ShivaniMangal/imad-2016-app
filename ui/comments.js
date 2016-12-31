@@ -8,7 +8,8 @@ var REQ = new XMLHttpRequest();
 alert('req generated');
 
 //Capture and store the response in a variable
-REQ.onreadystatechange = function()
+REQ.onreadystatechange = handleServerResponse;
+handleServerResponse(REQ)
 {
     alert('crossed onreadystatechange');
 if(REQ.readystate === XMLHttpRequest.DONE)
