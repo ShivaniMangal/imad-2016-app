@@ -18,7 +18,7 @@ REQ.onreadystatechange = function()
  //  else if(REQ.readystate === XMLHttpRequest.DONE)
  if(XMLHttpRequest.DONE)
 {//Action
-alert('action has begun');
+//alert('action has begun');
 if(REQ.status === 200 )
 {
    // alert('200!');
