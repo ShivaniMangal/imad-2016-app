@@ -18,15 +18,15 @@ REQ.onreadystatechange = function()
  //  else if(REQ.readystate === XMLHttpRequest.DONE)
  if(XMLHttpRequest.DONE)
 {//Action
-//alert('action has begun');
+alert('action has begun');
 if(REQ.status === 200 )
 {
-   // alert('200!');
+   alert('200!');
 //Capture a list of comments and render it as a list
 var names=REQ.responseText;
-//alert('response');
+alert('response');
 var obj=JSON.parse(names);//convets string to JSON obj i.e array
-//alert('parsed');
+alert('parsed');
 var list = '';
 for(var i=0; i< obj.length; i++){
 list += '<li>' + obj[i] + '</li>';
@@ -43,5 +43,5 @@ var nameInput=document.getElementById('name');
 var name= nameInput.value;
 REQ.open('GET','http://shivanimangal.imad.hasura-app.io/submit-name?name=' + name, true);
 REQ.send(null);
-//alert('sent...but where?')
+alert('sent...but where?')
 };
