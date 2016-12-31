@@ -5,6 +5,7 @@ submit.onclick=function()
     alert('started');
 //Creating a request obj
 var REQ = new XMLHttpRequest();
+alert('req generated');
 
 //Capture and store the response in a variable
 REQ.onreadystatechange = function()
