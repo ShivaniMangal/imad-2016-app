@@ -52,7 +52,10 @@ app.get('/submit-name',function(req,res)
     res.send(JSON.stringify(names));
 });
 
-
+app.post("/submit-name", function (request, response) {
+names.push(request.query.names);
+  response.sendStatus(200);
+});
 
 app.get('/ui/hermione.jpg', function(req,res){
     res.sendFile(path.join(__dirname,'ui','hermione.jpg'));
