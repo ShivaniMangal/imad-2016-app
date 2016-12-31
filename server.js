@@ -124,12 +124,14 @@ app.get('/ui/bootrap.min.css.map', function (req, res) {
 });
 
 
-app.get('/ui/comments.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'comments.js'));
-});
+
 app.get('/navig', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'navigator.html'));
  
+});
+
+app.get('/ui/comments.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'comments.js'));
 });
 
 
