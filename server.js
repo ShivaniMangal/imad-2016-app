@@ -123,15 +123,16 @@ app.get('/ui/bootrap.min.css.map', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'bootstrap.css.map'));
 });
 
+
+app.get('/ui/comments.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'comments.js'));
+});
 app.get('/navig', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'navigator.html'));
  
 });
 
 
-app.get('/ui/comments.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'comments.js'));
-});
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
