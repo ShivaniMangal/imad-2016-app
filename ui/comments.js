@@ -16,6 +16,8 @@ REQ.onreadystatechange = function()
      //  alert('oh no');
  //  }
  //  else if(REQ.readystate === XMLHttpRequest.DONE)
+ REQ.onload=function()
+ {
  if(XMLHttpRequest.DONE)
 {//Action
 alert('action has begun');
@@ -44,4 +46,5 @@ var name= nameInput.value;
 REQ.open('GET','http://shivanimangal.imad.hasura-app.io/submit-name?name=' + name, true);
 REQ.send(null);
 alert('sent...but where?')
+};
 };
