@@ -1,14 +1,14 @@
 window.onload= function()
 {
-var submit =document.getElementById('submit_btn');
+var submit = document.getElementById('submit_btn');
 submit.onclick=function(){
 //Creating a request obj
 var request = new XMLHttpRequest();
 
 //Capture and store the response in a variable
 request.onreadystatechange = function(){
-if(request.readystate === XMLHttpRequest.DONE){//Action
-if(request.status === 200){
+if(request.readystate == XMLHttpRequest.DONE){//Action
+if(request.status == 200){
 //Capture a list of comments and render it as a list
 var names=request.responseText;
 names=JSON.parse(names);//convets string to JSON obj ie array
