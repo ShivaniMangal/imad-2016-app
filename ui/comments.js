@@ -21,12 +21,12 @@ REQ.onreadystatechange = function()
 alert('action has begun');
 if(REQ.status === 200 )
 {
-    alert('200!');
+   // alert('200!');
 //Capture a list of comments and render it as a list
 var names=REQ.responseText;
-alert('response');
+//alert('response');
 var obj=JSON.parse(names);//convets string to JSON obj i.e array
-alert('parsed');
+//alert('parsed');
 var list = '';
 for(var i=0; i< obj.length; i++){
 list += '<li>' + obj[i] + '</li>';
@@ -34,7 +34,7 @@ list += '<li>' + obj[i] + '</li>';
 //document.getElementById('work').innerHTML=list;
 var ul = document.getElementById('work');
 ul.innerHTML = list;
-set(visible= 'true');
+set(visible= true);
 }
 }
 //Not done
@@ -44,5 +44,5 @@ var nameInput=document.getElementById('name');
 var name= nameInput.value;
 REQ.open('GET','http://shivanimangal.imad.hasura-app.io/submit-name?name=' + name, true);
 REQ.send(null);
-alert('sent...but where?')
+//alert('sent...but where?')
 };
