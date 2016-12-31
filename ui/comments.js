@@ -16,7 +16,7 @@ names=JSON.parse(names);//convets string to JSON obj ie array
 var list ='';
 for(var i=0;i<names.length;i++)
 {
-list += '<li>'+ names[i] + '</li>';
+list += '<li>'+ names[i] ;
 }
 var ul = document.getElementById('work');
 ul.innerHTML=list;
@@ -26,7 +26,7 @@ ul.innerHTML=list;
 };
 //Make the request
 var nameInput=document.getElementById('name');
-var NAME= nameInput.value;
-request.open('GET','http://shivanimangal.imad.hasura-app.io/submit-name?name=' + NAME, true);
+var name= nameInput.value;
+request.open('GET','http://shivanimangal.imad.hasura-app.io/submit-name?name=' + name, true);
 request.send(null);
 };
