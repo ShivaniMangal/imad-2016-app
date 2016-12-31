@@ -1,4 +1,5 @@
-
+window.onload= function()
+{
 var submit =document.getElementById('submit_btn');
 submit.onclick=function(){
 //Creating a request obj
@@ -15,11 +16,10 @@ var list = '';
 for(var i=0; i< names.length; i++){
 list += '<li>' + names[i] + '</li>';
 }
-window.onload=function(){
     alert ('WORK');
 var ul = document.getElementById('work');
 ul.innerHTML = "Comment " + i +" :  " + list; 
-};
+
 }
 }
 //Not done
@@ -29,4 +29,5 @@ var nameInput=document.getElementById('name');
 var name= nameInput.value;
 request.open('GET','http://shivanimangal.imad.hasura-app.io/submit-name?name=' + name, true);
 request.send(null);
+};
 };
