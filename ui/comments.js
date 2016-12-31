@@ -16,7 +16,7 @@ REQ.onreadystatechange = function()
      //  alert('oh no');
  //  }
  //  else if(REQ.readystate === XMLHttpRequest.DONE)
- if(REQ.readystate==304&&XMLHttpRequest.DONE)
+ if(XMLHttpRequest.DONE)
 {//Action
 //alert('action has begun');
 if(REQ.status === 200 )
