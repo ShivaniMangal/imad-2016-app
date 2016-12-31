@@ -1,4 +1,4 @@
-var ul = document.getElementById('work');
+
 var submit =document.getElementById('submit_btn');
 submit.onclick=function()
 {
@@ -19,8 +19,8 @@ for(var i=0; i< names.length; i++)
 {
 list += '<li>' + names[i] + '</li>';
 }
-//var ul = document.getElementById('work');
-ul.innerHTML = "Comment" + i + list;
+var ul = document.getElementById('work');
+ul.innerHTML = "Comment " + i +" :  " + list;
 }
 }
 //Not done
