@@ -124,7 +124,7 @@ app.get('/ui/bootrap.min.css.map', function (req, res) {
 });
 
 app.get('/comms', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'comms.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'comm.html'));
 });
 
 
