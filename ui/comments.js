@@ -10,7 +10,7 @@ request.onreadystatechange = function()
 {
 if(request.readystate == XMLHttpRequest.DONE)
 {//Action
-if(request.status == 200)
+if(request.status == 200 || request.readystate==4)
 {
 //Capture a list of comments and render it as a list
 var names=request.responseText;
