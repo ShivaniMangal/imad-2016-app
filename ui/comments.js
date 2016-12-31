@@ -33,11 +33,7 @@ list += '<li>' + obj[i] + '</li>';
 }
 //document.getElementById('work').innerHTML=list;
 var ul = document.getElementById('work');
-var visible = true;
-while(visible)
-{
 ul.innerHTML = list;
-}
 }
 }
 //Not done
