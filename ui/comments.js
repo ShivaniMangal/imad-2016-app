@@ -12,6 +12,7 @@ if(REQ.readystate === XMLHttpRequest.DONE)
 {//Action
 if(REQ.status === 200 )
 {
+    alert('200!');
 //Capture a list of comments and render it as a list
 var names=REQ.responseText;
 var obj=JSON.parse(names);//convets string to JSON obj i.e array
