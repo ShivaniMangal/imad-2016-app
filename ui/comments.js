@@ -32,7 +32,7 @@ for(var i=0; i< obj.length; i++){
 list += '<li>' + obj[i] + '</li>';
 }
 //document.getElementById('work').innerHTML=list;
-var set visible = truw
+var visible = true;
 while(visible)
 {
 var ul = document.getElementById('work');
