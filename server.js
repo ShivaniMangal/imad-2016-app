@@ -132,6 +132,17 @@ app.get('/submit-name', function (req,res)
     names.push(NAME);
     res.send(JSON.stringify(names));
 });
+//<!----------------------------------------------->
+app.get("/work", function (request, response) {
+  response.send(work);
+});
+
+// could also use the POST body instead of query string: http://expressjs.com/en/api.html#req.body
+app.post("/work", function (request, response) {
+  work.push(request.query.name);
+  response.sendStatus(200);
+});
+//<!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!>
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
