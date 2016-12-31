@@ -6,14 +6,6 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var names =[];
-app.get('/submit-name',function(req,res)
-{
-    //Get name from the request
-    var NAME = req.query.NAME;
-    names.push(NAME);
-    res.send(JSON.stringify(names));
-});
 
 app.get('/ui/comments.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'comments.js'));
@@ -50,6 +42,16 @@ app.get('/counter', function (req,res)
     counter=counter+1;
     res.send(counter.toString());
 });
+
+var names =[];
+app.get('/submit-name',function(req,res)
+{
+    //Get name from the request
+    var NAME = req.query.NAME;
+    names.push(NAME);
+    res.send(JSON.stringify(names));
+});
+
 
 
 app.get('/ui/hermione.jpg', function(req,res){
