@@ -3,6 +3,14 @@ var submit =document.getElementById('submit_btn');
 submit.onclick=function(){
 //Creating a request obj
 var request = new XMLHttpRequest();
+
+//Make the request
+var nameInput=document.getElementById('name');
+var name= nameInput.value;
+request.open('GET','http://shivanimangal.imad.hasura-app.io/submit-name?name=' + name, true);
+request.send(null);
+};
+
 //Capture and store the response in a variable
 request.onreadystatechange = function(){
 if(request.readystate === XMLHttpRequest.DONE){//Action
@@ -19,10 +27,4 @@ ul.innerHTML = "Comment " + i +" :  " + list;
 }
 }
 //Not done
-};
-//Make the request
-var nameInput=document.getElementById('name');
-var name= nameInput.value;
-request.open('GET','http://shivanimangal.imad.hasura-app.io/submit-name?name=' + name, true);
-request.send(null);
 };
