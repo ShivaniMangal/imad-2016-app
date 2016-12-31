@@ -10,7 +10,7 @@ alert('req generated');
 //Capture and store the response in a variable
 REQ.onreadystatechange = function()
 {
-    alert('crossed onreadystatechange');
+   // alert('crossed onreadystatechange');
 if(REQ.readystate === XMLHttpRequest.DONE)
 {//Action
 alert('action has begun');
