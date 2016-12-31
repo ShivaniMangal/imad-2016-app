@@ -1,7 +1,5 @@
-
-
 var submit =document.getElementById('submit_btn');
-submit.onclick = function()
+submit.onclick=function()
 {
 //Creating a request obj
 var request = new XMLHttpRequest();
