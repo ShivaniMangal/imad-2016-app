@@ -8,8 +8,7 @@ var REQ = new XMLHttpRequest();
 alert('req generated');
 
 //Capture and store the response in a variable
-REQ.onreadystatechange = handleServerResponse;
-handleServerResponse(REQ)
+var aliasName = function()
 {
     alert('crossed onreadystatechange');
 if(REQ.readystate === XMLHttpRequest.DONE)
@@ -38,6 +37,7 @@ ul.innerHTML = list;
 var nameInput=document.getElementById('name');
 var name= nameInput.value;
 request.open('GET','http://shivanimangal.imad.hasura-app.io/submit-name?name=' + name, true);
+REQ.onreadystatechange = aliasName;
 request.send(null);
 alert('sent...but where?')
 };
