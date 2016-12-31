@@ -3,17 +3,17 @@ var submit = document.getElementById('submit_btn');
 submit.onclick=function()
 {
 //Creating a request obj
-var request = new XMLHttpRequest();
+var REQ = new XMLHttpRequest();
 
 //Capture and store the response in a variable
-request.onreadystatechange = function()
+REQ.onreadystatechange = function()
 {
-if(request.readystate == XMLHttpRequest.DONE)
+if(REQ.readystate == XMLHttpRequest.DONE)
 {//Action
-if(request.status == 200 || request.readystate==4)
+if(REQ.status == 200 || REQ.readystate==4)
 {
 //Capture a list of comments and render it as a list
-var names=request.responseText;
+var names=REQ.responseText;
 names=JSON.parse(names);//convets string to JSON obj i.e array
 var list = '';
 for(var i=0; i< names.length; i++){
