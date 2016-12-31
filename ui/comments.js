@@ -39,6 +39,7 @@ while(visible)
 ul.innerHTML = list;
 }
 }
+}
 //Not done
 };
 //Make the request
