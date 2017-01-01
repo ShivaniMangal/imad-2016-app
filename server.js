@@ -73,6 +73,36 @@ app.get('/ui/sortinghat.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'sortinghat.jpg'));
 });
 
+app.get('/bootstrap imgs/g.jpg', function(req,res){
+    res.sendFile(path.join(__dirname,'bootstrap imgs','g.jpg'));
+});
+app.get('/bootstrap imgs/lib.jpg', function(req,res){
+    res.sendFile(path.join(__dirname,'bootstrap imgs','lib.jpg'));
+});
+app.get('/bootstrap imgs/gaiman.jpg', function(req,res){
+    res.sendFile(path.join(__dirname,'bootstrap imgs','gaiman.jpg'));
+});
+app.get('/bootstrap imgs/YA-BOOK.jpg', function(req,res){
+    res.sendFile(path.join(__dirname,'bootstrap imgs','YA-BOOK.jpg'));
+});
+app.get('/bootstrap imgs/tech.jpg', function(req,res){
+    res.sendFile(path.join(__dirname,'bootstrap imgs','tech.jpg'));
+});
+app.get('/bootstrap imgs/poem.jpg', function(req,res){
+    res.sendFile(path.join(__dirname,'bootstrap imgs','poem.jpg'));
+});
+app.get('/bootstrap imgs/holmes.jpg', function(req,res){
+    res.sendFile(path.join(__dirname,'bootstrap imgs','holmes.jpg'));
+});
+app.get('/bootstrap imgs/ya.jpg', function(req,res){
+    res.sendFile(path.join(__dirname,'bootstrap imgs','ya.jpg'));
+});
+app.get('/bootstrap imgs/got.jpg', function(req,res){
+    res.sendFile(path.join(__dirname,'bootstrap imgs','got.jpg'));
+});
+app.get('/bootstrap imgs/Thumbs.db', function(req,res){
+    res.sendFile(path.join(__dirname, 'bootstrap imgs','Thumbs.db'));
+});
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
@@ -130,6 +160,10 @@ app.get('/comms', function (req, res) {
 
 app.get('/navig', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'navigator.html'));
+ 
+});
+app.get('/home', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'home.html'));
  
 });
 
