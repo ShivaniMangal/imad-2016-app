@@ -73,32 +73,32 @@ app.get('/ui/sortinghat.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'sortinghat.jpg'));
 });
 
-app.get('/bootstrap imgs/g.jpg', function(req,res){
-    res.sendFile(path.join(__dirname,'bootstrap imgs','g.jpg'));
+app.get('/bootstrap_imgs/g.jpg', function(req,res){
+    res.sendFile(path.join(__dirname,'bootstrap_imgs','g.jpg'));
 });
-app.get('/bootstrap imgs/lib.jpg', function(req,res){
-    res.sendFile(path.join(__dirname,'bootstrap imgs','lib.jpg'));
+app.get('/bootstrap_imgs/lib.jpg', function(req,res){
+    res.sendFile(path.join(__dirname,'bootstrap_imgs','lib.jpg'));
 });
-app.get('/bootstrap imgs/gaiman.jpg', function(req,res){
-    res.sendFile(path.join(__dirname,'bootstrap imgs','gaiman.jpg'));
+app.get('/bootstrap_imgs/gaiman.jpg', function(req,res){
+    res.sendFile(path.join(__dirname,'bootstrap_imgs','gaiman.jpg'));
 });
-app.get('/bootstrap imgs/YA-BOOK.jpg', function(req,res){
-    res.sendFile(path.join(__dirname,'bootstrap imgs','YA-BOOK.jpg'));
+app.get('/bootstrap_imgs/YA-BOOK.jpg', function(req,res){
+    res.sendFile(path.join(__dirname,'bootstrap_imgs','YA-BOOK.jpg'));
 });
-app.get('/bootstrap imgs/tech.jpg', function(req,res){
-    res.sendFile(path.join(__dirname,'bootstrap imgs','tech.jpg'));
+app.get('/bootstrap_imgs/tech.jpg', function(req,res){
+    res.sendFile(path.join(__dirname,'bootstrap_imgs','tech.jpg'));
 });
-app.get('/bootstrap imgs/poem.jpg', function(req,res){
-    res.sendFile(path.join(__dirname,'bootstrap imgs','poem.jpg'));
+app.get('/bootstrap_imgs/poem.jpg', function(req,res){
+    res.sendFile(path.join(__dirname,'bootstrap_imgs','poem.jpg'));
 });
-app.get('/bootstrap imgs/holmes.jpg', function(req,res){
-    res.sendFile(path.join(__dirname,'bootstrap imgs','holmes.jpg'));
+app.get('/bootstrap_imgs/holmes.jpg', function(req,res){
+    res.sendFile(path.join(__dirname,'bootstrap_imgs','holmes.jpg'));
 });
-app.get('/bootstrap imgs/ya.jpg', function(req,res){
-    res.sendFile(path.join(__dirname,'bootstrap imgs','ya.jpg'));
+app.get('/bootstrap_imgs/ya.jpg', function(req,res){
+    res.sendFile(path.join(__dirname,'bootstrap_imgs','ya.jpg'));
 });
-app.get('/bootstrap imgs/got.jpg', function(req,res){
-    res.sendFile(path.join(__dirname,'bootstrap imgs','got.jpg'));
+app.get('/bootstrap_imgs/got.jpg', function(req,res){
+    res.sendFile(path.join(__dirname,'bootstrap_imgs','got.jpg'));
 });
 //app.get('/bootstrap imgs/Thumbs.db', function(req,res){
 //    res.sendFile(path.join(__dirname, 'bootstrap imgs','Thumbs.db'));
