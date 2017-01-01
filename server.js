@@ -100,9 +100,9 @@ app.get('/bootstrap imgs/ya.jpg', function(req,res){
 app.get('/bootstrap imgs/got.jpg', function(req,res){
     res.sendFile(path.join(__dirname,'bootstrap imgs','got.jpg'));
 });
-app.get('/bootstrap imgs/Thumbs.db', function(req,res){
-    res.sendFile(path.join(__dirname, 'bootstrap imgs','Thumbs.db'));
-});
+//app.get('/bootstrap imgs/Thumbs.db', function(req,res){
+//    res.sendFile(path.join(__dirname, 'bootstrap imgs','Thumbs.db'));
+//});
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
