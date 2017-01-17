@@ -37,7 +37,12 @@ app.get('/counter', function (req,res)
     counter=counter+1;
     res.send(counter.toString());
 });
-
+var correct=0;
+app.get('/correct', function (req,res)
+{
+    correct=correct+1;
+    res.send(correct.toString());
+});
 var names = [];
 app.get('/submit-name', function (req,res)
 {
@@ -73,8 +78,20 @@ app.get('/ui/sortinghat.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'sortinghat.jpg'));
 });
 
+app.get('/bootstrap_imgs/lib2.jpg', function(req,res){
+    res.sendFile(path.join(__dirname,'bootstrap_imgs','lib2.jpg'));
+});
+app.get('/bootstrap_imgs/quiz.jpg', function(req,res){
+    res.sendFile(path.join(__dirname,'bootstrap_imgs','quiz.jpg'));
+});
+app.get('/bootstrap_imgs/lib3.jpg', function(req,res){
+    res.sendFile(path.join(__dirname,'bootstrap_imgs','lib3.jpg'));
+});
 app.get('/bootstrap_imgs/g.jpg', function(req,res){
     res.sendFile(path.join(__dirname,'bootstrap_imgs','g.jpg'));
+});
+app.get('/bootstrap_imgs/ff.jpg', function(req,res){
+    res.sendFile(path.join(__dirname,'bootstrap_imgs','ff.jpg'));
 });
 app.get('/bootstrap_imgs/lib.jpg', function(req,res){
     res.sendFile(path.join(__dirname,'bootstrap_imgs','lib.jpg'));
@@ -117,6 +134,12 @@ app.get('/ui/likes_counter.js', function (req, res) {
 
 app.get('/ui/bootstrap.min.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'bootstrap.min.js'));
+});
+app.get('/ui/check.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'check.js'));
+});
+app.get('/register', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'register.html'));
 });
 
 
@@ -171,9 +194,27 @@ app.get('/ui/comments.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'comments.js'));
 });
 
+app.get('/ui/stylemine.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'stylemine.css'));
+});
+app.get('/ui/reviews.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'reviews.css'));
+});
 
+app.get('/ui/correct.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'correct.js'));
+});
+app.get('/q1', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Alocalq1.html'));
+});
+app.get('/p1', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'quizzing.html'));
+});
+app.get('/p2', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'p2.html'));
+});
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
-  console.log(`IMAD course app listening on port ${port}!`);
+  console.log(`IMAD course app listening on port ${port}! LOCALLY!!!!!!`);
 });
