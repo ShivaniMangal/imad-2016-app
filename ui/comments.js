@@ -1,4 +1,6 @@
 
+chrome.exe -allow-file-access-from-files
+
 var submit = document.getElementById('submit_btn');
 submit.onclick=function()
 {
