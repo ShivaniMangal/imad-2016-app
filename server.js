@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
 app.get('/MM', function(req,res){
 	res.sendFile(path.join(__dirname, 'ui','Map.html'));
 });
-app.get('/Sorting-Hat', function(req,res)
+app.get('/sorting', function(req,res)
 {
 	res.sendFile(path.join(__dirname,'ui','sorting.html'));
 });
@@ -212,6 +212,12 @@ app.get('/p1', function (req, res) {
 });
 app.get('/p2', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'p2.html'));
+});
+app.get('/p3', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'p3.html'));
+});
+app.get('/cursed', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'cursed.html'));
 });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
